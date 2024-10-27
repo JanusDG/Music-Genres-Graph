@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genre Graph</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="graphData.js"></script>
+    <script src="graphRenderer.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="audioController.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <div id="tabs">
+        <button class="tab" data-genre="Classical">Classical</button>
+        <button class="tab" data-genre="Pop">Pop</button>
+        <button class="tab" data-genre="Rock">Rock</button>
+        <button class="tab" data-genre="Hip-Hop">Hip-Hop</button>
+        <button class="tab" data-genre="Electronic">Electronic</button>
+        <button class="tab" data-genre="Jazz">Jazz</button>
+        <button class="tab" data-genre="Metal">Metal</button>
+        <button class="tab" data-genre="Punk">Punk</button>
+        <button class="tab" data-genre="Folk">Folk</button>
+        <button class="tab" data-genre="Country">Country</button>
+        <button class="tab" data-genre="Ambient">Ambient</button>
+    </div>
+    
+    <div id="graphs-container">
+        <div id="graph"></div> <!-- Add this line -->
+    </div>
+
+    <div id="sidebar" style="display: none;">
+        <h2 id="genre-name"></h2>
+        <button id="play-button" style="display: none;">Play</button>
+        <button id="pause-button" style="display: none;">Pause</button>
+        <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1">
+        <ul id="related-genres"></ul>
+    </div>
+
+    
+</body>
+</html>
