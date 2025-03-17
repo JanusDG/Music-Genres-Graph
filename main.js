@@ -9,7 +9,7 @@ var MODULE = (function (my) {
             
             const majorGenres = [
                 "Classical", "Pop", "Rock", "Hip Hop",
-                "Electronic", "Jazz", "Metal", "Punk",
+                "EDM", "Jazz", "Metal", "Punk",
                 "Folk", "Country", "Ambient"
             ];
 
